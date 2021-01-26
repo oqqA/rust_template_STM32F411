@@ -39,6 +39,10 @@ load
 # start the process but immediately halt the processor
 stepi
 
+
+
+# for fast start programm
 continue
 continue
+
 quit
