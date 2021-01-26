@@ -12,7 +12,7 @@ This is the template for projects on STM32F411 board
 ``` console
 > arm-none-eabi-gdb -v
 ```
-- [OpenOCD](https://xpack.github.io/openocd/)
+- [OpenOCD](https://xpack.github.io/openocd/install/)
   
 ``` console
 > openocd -v
@@ -22,11 +22,11 @@ This is the template for projects on STM32F411 board
 
 ### Instruction (build and load)
 0. Insert ST-LINK USB and connect on STM32F411
-1. run command on 1-st terminal
+1. Run command on 1-st terminal
 ``` console
 > openocd -f openocd.cfg
 ```
-2. run command on 2-nd terminal
+2. Run command on 2-nd terminal
 ``` console
 > cargo run --release
 ```
