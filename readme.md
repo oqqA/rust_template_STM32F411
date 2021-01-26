@@ -20,8 +20,7 @@ This is the template for projects on STM32F411 board
 - [ST-LINK USB driver](https://www.st.com/en/development-tools/stsw-link009.html)
 
 
-Run commands:
-
+- Run commands:
 ```console
 > cargo install cargo-binutils
 > rustup component add llvm-tools-preview
