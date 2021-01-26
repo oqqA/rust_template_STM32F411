@@ -20,6 +20,17 @@ This is the template for projects on STM32F411 board
 - [ST-LINK USB driver](https://www.st.com/en/development-tools/stsw-link009.html)
 
 
+Run commands:
+
+```console
+> cargo install cargo-binutils
+> rustup component add llvm-tools-preview
+
+> rustup target add thumbv7em-none-eabihf
+
+> cargo build --release
+```
+
 ### Instruction (build and load)
 0. Insert ST-LINK USB and connect on STM32F411
 1. Run command on 1-st terminal
