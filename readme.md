@@ -1,4 +1,5 @@
 ### Info
+
 This is the template for projects on STM32F411 board
 
 ### Dependencies
@@ -33,12 +34,10 @@ This is the template for projects on STM32F411 board
 <details>
   <summary>[spoiler] Second way</summary>
 
-    ``` console
     > cargo build --release
     > cargo objcopy --bin stm32f411 --target thumbv7em-none-eabihf --release -- -O binary stm32f411.bin
     > st-flash erase
     > st-flash write stm32f411.bin 0x8000000
-    ```
 </details>
 
 ### Detals
