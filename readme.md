@@ -44,3 +44,5 @@ This is the template for projects on STM32F411 board
 based on: https://github.com/rust-embedded/cortex-m-quickstart
 
 examples: https://github.com/stm32-rs/stm32f4xx-hal/tree/master/examples
+
+book: https://rust-embedded.github.io/book
