@@ -4,19 +4,11 @@ This is the template for projects on STM32F411 board
 
 ### Dependencies
 - [Rust compiler](https://www.rust-lang.org/tools/install)
-``` console
-> rustc --version 
-```
+
  > for windows users need [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=BuildTools) 
 - [arm-none-eabi-gdb](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
-``` console
-> arm-none-eabi-gdb -v
-```
+
 - [OpenOCD](https://xpack.github.io/openocd/install/)
-  
-``` console
-> openocd -v
-```
 - [ST-LINK USB driver](https://www.st.com/en/development-tools/stsw-link009.html)
 
 
