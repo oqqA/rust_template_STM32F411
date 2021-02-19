@@ -4,17 +4,23 @@ version = "0.1.0"
 authors = ["{{authors}}"]
 edition = "2018"
 
+[package.metadata.docs.rs]
+features = ["stm32f429", "rt", "usb_fs", "can"]
+targets = ["thumbv7em-none-eabihf"]
+
 [dependencies]
-embedded-hal = "0.2"
+embedded-hal = { version = "0.2", features = ["unproven"] }
 nb = "0.1.2"
 cortex-m = "0.6"
 cortex-m-rt = "0.6"
 cortex-m-semihosting = "*"
 panic-halt = "0.2"
+panic-semihosting = "0.5.2"
+stm32f4xx-hal = { version = "0.8.3", features = ["stm32f411", "usb_fs"] }
 
-[dependencies.stm32f4xx-hal]
-version = "0.8"
-features = ["rt", "stm32f411"]
+synopsys-usb-otg = { version = "0.2.0", features = ["cortex-m"], optional = true }
+usb-device = "0.2.5"
+usbd-serial = "0.1.0"
 
 [[bin]]
 name = "stm32f411"
