@@ -3,12 +3,16 @@
 This is the template for projects on STM32F411 board
 
 ### Dependencies
-- [Rust compiler](https://www.rust-lang.org/tools/install)
+- download [Rust compiler](https://www.rust-lang.org/tools/install)
 
  > for Windows users need [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=BuildTools)
 
 
-- [dfu-util](https://sourceforge.net/projects/dfu-util/)
+- download [dfu-util](https://sourceforge.net/projects/dfu-util/)
+- run command:
+    ```console
+    > python3 scripts/first_start.py
+    ```
 
 ### Instruction (build and upload)
 
