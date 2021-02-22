@@ -26,5 +26,8 @@ This is the template for projects on STM32F411 board
 based on: https://github.com/rust-embedded/cortex-m-quickstart
 
 examples: https://github.com/stm32-rs/stm32f4xx-hal/tree/master/examples
+or https://github.com/stm32-rs/stm32f4xx-hal/tree/cargo-bloat/examples
+
+hal docs: https://docs.rs/stm32f4xx-hal/0.8.3/stm32f4xx_hal/
 
 book: https://rust-embedded.github.io/book
