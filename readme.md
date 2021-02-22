@@ -2,26 +2,10 @@
 
 This is the template for projects on STM32F411 board
 
-3 ways to upload firmware:
-
-- DFU mode (recommend)
-- ST-Link
-- UART
-
 ### Dependencies
 - [Rust compiler](https://www.rust-lang.org/tools/install)
 
  > for Windows users need [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/thank-you-downloading-visual-studio/?sku=BuildTools)
-
-
-<details>
-    <summary>[spoiler] DFU mode</summary>
-
-- [dfu-util](https://sourceforge.net/projects/dfu-util/)
-</details>
-
-<details>
-  <summary>[spoiler] ST-Link</summary>
 
   - [arm-none-eabi-gdb](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 
@@ -32,32 +16,11 @@ This is the template for projects on STM32F411 board
     ```console
     > python3 scripts/first_start.py
     ```
-</details>
-<details>
-  <summary>[spoiler] UART</summary>
-
-<>todo
-</details>
 
 ### Instruction (build and upload)
 
-<details>
-  <summary>[spoiler] DFU mode</summary>
-
-0. Hold the button BOOT0
-1. Connect STM32F411 to PC
-2. Release the button BOOT0
-3. Run command:
-``` console
-> python3 scripts/run.py
-```
-</details>
-
-<details>
-  <summary>[spoiler] ST-Link</summary>
-
-0. Insert ST-LINK to PC USB and connect on STM32F411
-1. Run command on 1-st terminal
+1. Insert ST-LINK to PC USB and connect on STM32F411
+2. Run command on 1-st terminal
 ``` console
 > openocd -f openocd.cfg
 ```
@@ -65,16 +28,13 @@ This is the template for projects on STM32F411 board
 ``` console
 > cargo run --release
 ```
-</details>
-
-<details>
-  <summary>[spoiler] UART</summary>
-<>todo
-</details>
 
 ### Detals
 based on: https://github.com/rust-embedded/cortex-m-quickstart
 
 examples: https://github.com/stm32-rs/stm32f4xx-hal/tree/master/examples
+or https://github.com/stm32-rs/stm32f4xx-hal/tree/cargo-bloat/examples
+
+hal docs: https://docs.rs/stm32f4xx-hal/0.8.3/stm32f4xx_hal/
 
 book: https://rust-embedded.github.io/book
